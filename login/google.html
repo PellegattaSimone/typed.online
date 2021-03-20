@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			var response = new URLSearchParams(location.hash);
+
+			onload = function() {
+				var form = document.querySelector("form");
+
+				form.querySelector("input").value = response.get("id_token");
+				form.submit();
+			}
+		</script>
+	</head>
+	<body>
+		<form method="POST" action="google.php">
+			<input type="hidden" name="token" />
+		</form>
+	</body>
+</html>

@@ -1,0 +1,18 @@
+h1 + div {
+	font-size: 2rem;
+
+	margin-top: 5rem;
+	padding: 0 11vw;
+
+	line-height: 5rem;
+}
+hr {
+	position: relative;
+	top: 2.5rem;
+	right: 5vw;
+
+	width: calc(100% + 10vw);
+}
+hr:last-of-type {
+	display: none;
+}

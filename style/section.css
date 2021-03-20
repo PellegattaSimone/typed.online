@@ -1,0 +1,28 @@
+form {
+	margin-top : 0;
+}
+section {
+	padding: 2rem 0;
+
+	border-bottom: .3rem solid #000;
+}
+section:hover {
+	background-color: #2809;
+}
+section ol, section ul {
+	font-size: 2.5rem;
+
+	margin: 3rem 4rem 0 4rem;
+}
+p {
+	text-align: justify;
+}
+
+@media (max-aspect-ratio: 2/3) {
+	body {
+		margin-bottom: 15rem;
+	}
+	p, section ol, section ul {
+		margin: 3rem 4vw 0 4vw;
+	}
+}

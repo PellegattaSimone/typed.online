@@ -1,0 +1,169 @@
+section {
+	position: relative;
+	top: 4rem;
+
+	min-height: 10rem;
+
+	margin-top: -3rem;
+	padding: 2rem 0 6rem;
+}
+article, article * {
+	position: relative;
+
+	font-size: 2rem;
+}
+article {
+	overflow-wrap: break-word;
+
+	left: 4rem;
+
+	width: calc(100vw - 8rem);
+
+	padding: 1.5rem 0;
+}
+hr {
+	width: calc(100vw - 6rem);
+	border-style: none;
+	border-top: .1rem solid var(--gray1);
+}
+hr:last-of-type {
+	display: none;
+}
+.user {
+	display: inline-block;
+
+	left: 6vw;
+
+	background-color: var(--gray1);
+
+	color: #000;
+
+	max-width: 70vw;
+
+	padding: .5rem 1rem;
+	margin-bottom: .5rem;
+
+	border-radius: .5rem;
+}
+.user a {
+	color: inherit;
+	font-weight: inherit;
+}
+.date {
+	top: .5rem;
+	right: 2vw;
+
+	float: right;
+
+	margin-left: 4rem;
+}
+.question, .answer {
+	max-width: 85%;
+
+	padding: 1rem 0;
+}
+.question {
+	left: 2vw;
+}
+.answer {
+	left: 10vw;
+}
+#zoom {
+	display: flex;
+	z-index: 2;
+	pointer-events: none;
+
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 5rem;
+	margin: 0 auto;
+}
+#zoom > * {
+	pointer-events: auto;
+}
+#zoom h2 {
+	position: relative;
+	top: .25rem;
+
+	background-color: #222;
+
+	color: #EED;
+	font-size: 4.5rem;
+
+	margin-bottom: 0;
+	padding: 2rem 6rem 1rem;
+
+	border: .2rem solid #000;
+	border-top-left-radius: 9rem;
+	border-top-right-radius: 9rem;
+}
+#zoom article {
+	position: static;
+
+	background-color: #942;
+
+	width: 70vw;
+
+	border: .2rem solid #000;
+	border-radius: 3rem;
+}
+#zoom article * {
+	color: #000;
+	font-size: 2.8rem;
+}
+#zoom article label {
+	display: block;
+	cursor: pointer;
+
+	font-size: 1.8rem;
+}
+#zoom label {
+	text-align: center;
+
+	font-size: 2rem;
+
+	padding: 2rem 3vw 0;
+}
+#zoom .user {
+	background-color: #AAA;
+}
+#zoom .answer {
+	left: 8rem;
+}
+
+@media (max-aspect-ratio: 2/3) {
+	section {
+		padding-bottom: 9rem;
+	}
+	.date span {
+		display: none;
+	}
+
+	#zoom article * {
+		font-size: 2.5rem;
+	}
+	#zoom article label {
+		font-size: calc(1rem + 1.3vw);
+	}
+	#zoom .date {
+		display: none;
+	}
+}
+@media (max-aspect-ratio: 1/1) {
+	h1 + section {
+		padding-top: 0;
+	}
+	#zoom article {
+		width: 60rem;
+		max-width: 90vw;
+	}
+	#zoom .answer {
+		left: 8vw;
+	}
+}

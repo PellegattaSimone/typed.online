@@ -1,0 +1,38 @@
+#action {
+	text-align: center;
+
+	margin-top: 10rem;
+}
+#action button {
+	line-height: 2.5rem;
+
+	font-size: 3rem;
+
+	width: 25rem;
+	height: 9.1rem;
+
+	margin: 2rem 4rem;
+	padding: 2rem;
+}
+#profile {
+	text-align: center;
+
+	margin-top: 6rem;
+}
+#profile h2 {
+	font-size: 5rem;
+	font-family: lato, sans-serif;
+	font-weight: normal;
+	font-style: italic;
+}
+#profile span {
+	display: inline-block;
+
+	font-size: 3rem;
+}
+#profile > span {
+	margin: 2rem 7vw 10rem;
+}
+#profile span span {
+	margin-top: 1rem;
+}

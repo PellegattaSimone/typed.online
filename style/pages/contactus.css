@@ -1,0 +1,59 @@
+textarea {
+	font-size: 2rem;
+
+	width: 70rem;
+	max-width: 60vw;
+	height: 20rem;
+	min-height: 15vh;
+	max-height: 40vh;
+	resize: vertical;
+
+	margin-top: 4rem;
+	padding: 1.2rem;
+	padding-bottom: .3rem;
+}
+select {
+	width: 40rem;
+	height: 5rem;
+}
+option {
+	background-color: var(--gray2);
+
+	color: var(--white);
+	font-size: 2rem;
+}
+option[hidden] {
+	font-size: 1px;
+}
+span.content {
+	overflow-x: hidden;
+	width: 15vw;
+
+	transform: translate(1.5rem, 5.5rem);
+}
+.result img {
+	position: relative;
+	top: .2rem;
+
+	vertical-align: top;
+
+	width: 2rem;
+
+	margin-right: 1rem;
+}
+
+@media (max-aspect-ratio: 1/1) {
+	textarea {
+		max-width: 80vw;
+	}
+	span.content {
+		display: block;
+		left: 0;
+		right: 0;
+		transform: translateY(-2rem);
+
+		text-align: center;
+
+		width: auto;
+	}
+}

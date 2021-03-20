@@ -1,0 +1,29 @@
+h3 {
+	top: 0;
+}
+p {
+	text-align: justify;
+}
+#user {
+	word-break: break-all;
+}
+#action {
+	text-align: center;
+
+	margin-top: 5rem;
+	margin-bottom: 17rem;
+}
+#action button {
+	line-height: 2.5rem;
+
+	font-size: 3rem;
+
+	width: 22rem;
+	height: 7.1rem;
+
+	margin: 1.5rem 4rem;
+}
+#instagram {
+	font-style: italic;
+	font-weight: bold;
+}

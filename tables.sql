@@ -1,0 +1,71 @@
+CREATE TABLE `accountlist` (
+	`id` MEDIUMINT(8) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	`user` VARCHAR(30) NOT NULL,
+	`password` VARCHAR(255) NOT NULL,
+	`email` VARCHAR(254) NOT NULL,
+	`creationdate` DATETIME NOT NULL,
+	`instagram` VARCHAR(30) NULL,
+	`token` VARCHAR(404) NULL,
+	`tokendate` DATE NULL,
+	`hash` VARCHAR(64) NULL,
+	`hashdate` DATE NULL,
+	`privacy` BOOLEAN NOT NULL DEFAULT 1
+);
+
+CREATE TABLE `data` (
+	`id` MEDIUMINT(8) UNSIGNED NOT NULL UNIQUE AUTO_INCREMENT,
+	`rgb` VARCHAR(36) NULL,
+	`crushbox` DATETIME NULL,
+	`crushpwd` VARCHAR(255) NULL,
+	`expire` TINYINT(3) UNSIGNED NOT NULL DEFAULT 20,
+	`first` MEDIUMINT(8) UNSIGNED NULL,
+	`firstdate` DATE NULL,
+	`second` MEDIUMINT(8) UNSIGNED NULL,
+	`seconddate` DATE NULL,
+	`third` MEDIUMINT(8) UNSIGNED NULL,
+	`thirddate` DATE NULL,
+	`match` MEDIUMINT(8) UNSIGNED NULL,
+	`points` INT(10) NOT NULL DEFAULT 0,
+	`allow` DATE NOT NULL,
+	`description` BOOLEAN NOT NULL DEFAULT 0,
+	FOREIGN KEY (`id`) REFERENCES `accountlist`(`id`)
+);
+
+CREATE TABLE `types` (
+	`id` MEDIUMINT(8) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	`from` MEDIUMINT(8) UNSIGNED NULL,
+	`to` MEDIUMINT(8) UNSIGNED NOT NULL,
+	`content` VARCHAR(200) NOT NULL,
+	`answer` VARCHAR(200) NULL,
+	`anonymous` BOOLEAN NOT NULL DEFAULT 1,
+	`hidden` BOOLEAN NOT NULL DEFAULT 0,
+	`questiondate` DATETIME NOT NULL,
+	`answerdate` DATETIME NULL,
+	FOREIGN KEY (`from`) REFERENCES `accountlist`(`id`),
+	FOREIGN KEY (`to`) REFERENCES `accountlist`(`id`)
+);
+
+CREATE TABLE `update` (
+	`id` VARCHAR(8) NOT NULL PRIMARY KEY,
+	`hash` VARCHAR(255) NOT NULL,
+	`email` VARCHAR(254) NOT NULL,
+	`expire` DATETIME NOT NULL,
+	`userid` MEDIUMINT(8) UNSIGNED NULL,
+	`user` VARCHAR(30) NULL,
+	`instagram` VARCHAR(30) NULL,
+	`token` VARCHAR(404) NULL,
+	`point` VARCHAR(30) NULL,
+	FOREIGN KEY (`email`) REFERENCES `accountlist`(`email`)
+);
+
+CREATE TABLE `contactus` (
+	`id` MEDIUMINT(8) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	`userid` MEDIUMINT(8) UNSIGNED NULL,
+	`type` BOOLEAN NOT NULL,
+	`page` TINYINT(2) UNSIGNED NULL,
+	`email` VARCHAR(254) NULL,
+	`content` VARCHAR(1000) NOT NULL,
+	`date` DATETIME NOT NULL,
+	FOREIGN KEY (`userid`) REFERENCES `accountlist`(`id`),
+	FOREIGN KEY (`email`) REFERENCES `accountlist`(`email`)
+);

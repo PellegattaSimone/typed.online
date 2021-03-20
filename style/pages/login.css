@@ -1,0 +1,60 @@
+#google {
+	text-align: center;
+}
+#google p {
+	display: inline-block;
+
+	position: relative;
+	bottom: 4rem;
+
+	color: var(--gray2);
+	font-size: 2rem;
+
+	height: 1rem;
+
+	margin-top: 2rem;
+}
+#google p:before, #google p:after {
+	content: "";
+	display: inline-block;
+
+	vertical-align: middle;
+
+	width: 3em;
+
+	margin: 0 0.5em;
+
+	border-top: .15rem solid var(--gray2);
+}
+#google div, #google label {
+	cursor: pointer;
+}
+#google div {
+	display: inline-block;
+	overflow: hidden;
+
+	position: relative;
+
+	line-height: 4rem;
+	background-color: var(--blue);
+
+	font-size: 1.6rem;
+
+	width: 18rem;
+	height: 4rem;
+
+	padding-left: 4rem;
+
+	border: .15rem solid var(--black);
+	border-radius: .2rem;
+}
+#google img {
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	width: 4rem;
+}
+#redirect {
+	padding-bottom: 5rem;
+}

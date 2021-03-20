@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+		<sitemap>
+			<loc>https://www.typed.online/sitemap/default.xml</loc>
+		</sitemap>
+		<sitemap>
+			<loc>https://www.typed.online/sitemap/english.xml</loc>
+		</sitemap>
+		<sitemap>
+			<loc>https://www.typed.online/sitemap/italian.xml</loc>
+		</sitemap>
+		<sitemap>
+			<loc>https://www.typed.online/sitemap/french.xml</loc>
+		</sitemap>
+		<sitemap>
+			<loc>https://www.typed.online/sitemap/spanish.xml</loc>
+		</sitemap>
+		<sitemap>
+			<loc>https://www.typed.online/sitemap/german.xml</loc>
+		</sitemap>
+	</sitemapindex>

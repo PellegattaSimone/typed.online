@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+		<url>
+			<loc>https://www.typed.online</loc>
+				<xhtml:link rel="alternate" hreflang="x-default" href="https://www.typed.online" />
+				<xhtml:link rel="alternate" hreflang="en" href="https://www.typed.online/?lang=en" />
+				<xhtml:link rel="alternate" hreflang="it" href="https://www.typed.online/?lang=it" />
+				<xhtml:link rel="alternate" hreflang="fr" href="https://www.typed.online/?lang=fr" />
+				<xhtml:link rel="alternate" hreflang="es" href="https://www.typed.online/?lang=es" />
+				<xhtml:link rel="alternate" hreflang="de" href="https://www.typed.online/?lang=de" />
+			<changefreq>monthly</changefreq>
+			<priority>1.0</priority>
+		</url>
+
+		<url>
+			<loc>https://www.typed.online/instagram</loc>
+				<xhtml:link rel="alternate" hreflang="x-default" href="https://www.typed.online/instagram" />
+				<xhtml:link rel="alternate" hreflang="en" href="https://www.typed.online/instagram?lang=en" />
+				<xhtml:link rel="alternate" hreflang="it" href="https://www.typed.online/instagram?lang=it" />
+				<xhtml:link rel="alternate" hreflang="fr" href="https://www.typed.online/instagram?lang=fr" />
+				<xhtml:link rel="alternate" hreflang="es" href="https://www.typed.online/instagram?lang=es" />
+				<xhtml:link rel="alternate" hreflang="de" href="https://www.typed.online/instagram?lang=de" />
+			<changefreq>monthly</changefreq>
+			<priority>0.4</priority>
+		</url>
+
+		<url>
+			<loc>https://www.typed.online/signup</loc>
+				<xhtml:link rel="alternate" hreflang="x-default" href="https://www.typed.online/signup" />
+				<xhtml:link rel="alternate" hreflang="en" href="https://www.typed.online/signup?lang=en" />
+				<xhtml:link rel="alternate" hreflang="it" href="https://www.typed.online/signup?lang=it" />
+				<xhtml:link rel="alternate" hreflang="fr" href="https://www.typed.online/signup?lang=fr" />
+				<xhtml:link rel="alternate" hreflang="es" href="https://www.typed.online/signup?lang=es" />
+				<xhtml:link rel="alternate" hreflang="de" href="https://www.typed.online/signup?lang=de" />
+			<changefreq>monthly</changefreq>
+			<priority>0.8</priority>
+		</url>
+
+		<url>
+			<loc>https://www.typed.online/login</loc>
+				<xhtml:link rel="alternate" hreflang="x-default" href="https://www.typed.online/login" />
+				<xhtml:link rel="alternate" hreflang="en" href="https://www.typed.online/login?lang=en" />
+				<xhtml:link rel="alternate" hreflang="it" href="https://www.typed.online/login?lang=it" />
+				<xhtml:link rel="alternate" hreflang="fr" href="https://www.typed.online/login?lang=fr" />
+				<xhtml:link rel="alternate" hreflang="es" href="https://www.typed.online/login?lang=es" />
+				<xhtml:link rel="alternate" hreflang="de" href="https://www.typed.online/login?lang=de" />
+			<changefreq>monthly</changefreq>
+			<priority>0.8</priority>
+		</url>
+
+		<url>
+			<loc>https://www.typed.online/user</loc>
+				<xhtml:link rel="alternate" hreflang="x-default" href="https://www.typed.online/user" />
+				<xhtml:link rel="alternate" hreflang="en" href="https://www.typed.online/user?lang=en" />
+				<xhtml:link rel="alternate" hreflang="it" href="https://www.typed.online/user?lang=it" />
+				<xhtml:link rel="alternate" hreflang="fr" href="https://www.typed.online/user?lang=fr" />
+				<xhtml:link rel="alternate" hreflang="es" href="https://www.typed.online/user?lang=es" />
+				<xhtml:link rel="alternate" hreflang="de" href="https://www.typed.online/user?lang=de" />
+			<changefreq>weekly</changefreq>
+			<priority>1.0</priority>
+		</url>
+
+		<url>
+			<loc>https://www.typed.online/user/reply</loc>
+				<xhtml:link rel="alternate" hreflang="x-default" href="https://www.typed.online/user/reply" />
+				<xhtml:link rel="alternate" hreflang="en" href="https://www.typed.online/user/reply?lang=en" />
+				<xhtml:link rel="alternate" hreflang="it" href="https://www.typed.online/user/reply?lang=it" />
+				<xhtml:link rel="alternate" hreflang="fr" href="https://www.typed.online/user/reply?lang=fr" />
+				<xhtml:link rel="alternate" hreflang="es" href="https://www.typed.online/user/reply?lang=es" />
+				<xhtml:link rel="alternate" hreflang="de" href="https://www.typed.online/user/reply?lang=de" />
+			<changefreq>weekly</changefreq>
+			<priority>0.8</priority>
+		</url>
+
+		<url>
+			<loc>https://www.typed.online/user/types</loc>
+				<xhtml:link rel="alternate" hreflang="x-default" href="https://www.typed.online/user/types" />
+				<xhtml:link rel="alternate" hreflang="en" href="https://www.typed.online/user/types?lang=en" />
+				<xhtml:link rel="alternate" hreflang="it" href="https://www.typed.online/user/types?lang=it" />
+				<xhtml:link rel="alternate" hreflang="fr" href="https://www.typed.online/user/types?lang=fr" />
+				<xhtml:link rel="alternate" hreflang="es" href="https://www.typed.online/user/types?lang=es" />
+				<xhtml:link rel="alternate" hreflang="de" href="https://www.typed.online/user/types?lang=de" />
+			<changefreq>weekly</changefreq>
+			<priority>0.6</priority>
+		</url>
+
+		<url>
+			<loc>https://www.typed.online/user/points</loc>
+				<xhtml:link rel="alternate" hreflang="x-default" href="https://www.typed.online/user/points" />
+				<xhtml:link rel="alternate" hreflang="en" href="https://www.typed.online/user/points?lang=en" />
+				<xhtml:link rel="alternate" hreflang="it" href="https://www.typed.online/user/points?lang=it" />
+				<xhtml:link rel="alternate" hreflang="fr" href="https://www.typed.online/user/points?lang=fr" />
+				<xhtml:link rel="alternate" hreflang="es" href="https://www.typed.online/user/points?lang=es" />
+				<xhtml:link rel="alternate" hreflang="de" href="https://www.typed.online/user/points?lang=de" />
+			<changefreq>weekly</changefreq>
+			<priority>0.6</priority>
+		</url>
+
+		<url>
+			<loc>https://www.typed.online/profile</loc>
+				<xhtml:link rel="alternate" hreflang="x-default" href="https://www.typed.online/profile" />
+				<xhtml:link rel="alternate" hreflang="en" href="https://www.typed.online/profile?lang=en" />
+				<xhtml:link rel="alternate" hreflang="it" href="https://www.typed.online/profile?lang=it" />
+				<xhtml:link rel="alternate" hreflang="fr" href="https://www.typed.online/profile?lang=fr" />
+				<xhtml:link rel="alternate" hreflang="es" href="https://www.typed.online/profile?lang=es" />
+				<xhtml:link rel="alternate" hreflang="de" href="https://www.typed.online/profile?lang=de" />
+			<changefreq>weekly</changefreq>
+			<priority>0.6</priority>
+		</url>
+
+		<url>
+			<loc>https://www.typed.online/profile/crushbox</loc>
+				<xhtml:link rel="alternate" hreflang="x-default" href="https://www.typed.online/profile/crushbox" />
+				<xhtml:link rel="alternate" hreflang="en" href="https://www.typed.online/profile/crushbox?lang=en" />
+				<xhtml:link rel="alternate" hreflang="it" href="https://www.typed.online/profile/crushbox?lang=it" />
+				<xhtml:link rel="alternate" hreflang="fr" href="https://www.typed.online/profile/crushbox?lang=fr" />
+				<xhtml:link rel="alternate" hreflang="es" href="https://www.typed.online/profile/crushbox?lang=es" />
+				<xhtml:link rel="alternate" hreflang="de" href="https://www.typed.online/profile/crushbox?lang=de" />
+			<changefreq>weekly</changefreq>
+			<priority>0.8</priority>
+		</url>
+
+		<url>
+			<loc>https://www.typed.online/profile/crushbox/start</loc>
+				<xhtml:link rel="alternate" hreflang="x-default" href="https://www.typed.online/profile/crushbox/start" />
+				<xhtml:link rel="alternate" hreflang="en" href="https://www.typed.online/profile/crushbox/start?lang=en" />
+				<xhtml:link rel="alternate" hreflang="it" href="https://www.typed.online/profile/crushbox/start?lang=it" />
+				<xhtml:link rel="alternate" hreflang="fr" href="https://www.typed.online/profile/crushbox/start?lang=fr" />
+				<xhtml:link rel="alternate" hreflang="es" href="https://www.typed.online/profile/crushbox/start?lang=es" />
+				<xhtml:link rel="alternate" hreflang="de" href="https://www.typed.online/profile/crushbox/start?lang=de" />
+			<changefreq>weekly</changefreq>
+			<priority>0.4</priority>
+		</url>
+
+		<url>
+			<loc>https://www.typed.online/profile/crushbox/login</loc>
+				<xhtml:link rel="alternate" hreflang="x-default" href="https://www.typed.online/profile/crushbox/login" />
+				<xhtml:link rel="alternate" hreflang="en" href="https://www.typed.online/profile/crushbox/login?lang=en" />
+				<xhtml:link rel="alternate" hreflang="it" href="https://www.typed.online/profile/crushbox/login?lang=it" />
+				<xhtml:link rel="alternate" hreflang="fr" href="https://www.typed.online/profile/crushbox/login?lang=fr" />
+				<xhtml:link rel="alternate" hreflang="es" href="https://www.typed.online/profile/crushbox/login?lang=es" />
+				<xhtml:link rel="alternate" hreflang="de" href="https://www.typed.online/profile/crushbox/login?lang=de" />
+			<changefreq>weekly</changefreq>
+			<priority>0.6</priority>
+		</url>
+
+		<url>
+			<loc>https://www.typed.online/profile/settings</loc>
+				<xhtml:link rel="alternate" hreflang="x-default" href="https://www.typed.online/profile/settings" />
+				<xhtml:link rel="alternate" hreflang="en" href="https://www.typed.online/profile/settings?lang=en" />
+				<xhtml:link rel="alternate" hreflang="it" href="https://www.typed.online/profile/settings?lang=it" />
+				<xhtml:link rel="alternate" hreflang="fr" href="https://www.typed.online/profile/settings?lang=fr" />
+				<xhtml:link rel="alternate" hreflang="es" href="https://www.typed.online/profile/settings?lang=es" />
+				<xhtml:link rel="alternate" hreflang="de" href="https://www.typed.online/profile/settings?lang=de" />
+			<changefreq>weekly</changefreq>
+			<priority>0.4</priority>
+		</url>
+
+		<url>
+			<loc>https://www.typed.online/style</loc>
+				<xhtml:link rel="alternate" hreflang="x-default" href="https://www.typed.online/style" />
+				<xhtml:link rel="alternate" hreflang="en" href="https://www.typed.online/style?lang=en" />
+				<xhtml:link rel="alternate" hreflang="it" href="https://www.typed.online/style?lang=it" />
+				<xhtml:link rel="alternate" hreflang="fr" href="https://www.typed.online/style?lang=fr" />
+				<xhtml:link rel="alternate" hreflang="es" href="https://www.typed.online/style?lang=es" />
+				<xhtml:link rel="alternate" hreflang="de" href="https://www.typed.online/style?lang=de" />
+			<changefreq>weekly</changefreq>
+			<priority>0.6</priority>
+		</url>
+
+		<url>
+			<loc>https://www.typed.online/contactus/advice</loc>
+				<xhtml:link rel="alternate" hreflang="x-default" href="https://www.typed.online/contactus/advice" />
+				<xhtml:link rel="alternate" hreflang="en" href="https://www.typed.online/contactus/advice?lang=en" />
+				<xhtml:link rel="alternate" hreflang="it" href="https://www.typed.online/contactus/advice?lang=it" />
+				<xhtml:link rel="alternate" hreflang="fr" href="https://www.typed.online/contactus/advice?lang=fr" />
+				<xhtml:link rel="alternate" hreflang="es" href="https://www.typed.online/contactus/advice?lang=es" />
+				<xhtml:link rel="alternate" hreflang="de" href="https://www.typed.online/contactus/advice?lang=de" />
+			<changefreq>monthly</changefreq>
+			<priority>0.2</priority>
+		</url>
+
+		<url>
+			<loc>https://www.typed.online/contactus/bug</loc>
+				<xhtml:link rel="alternate" hreflang="x-default" href="https://www.typed.online/contactus/bug" />
+				<xhtml:link rel="alternate" hreflang="en" href="https://www.typed.online/contactus/bug?lang=en" />
+				<xhtml:link rel="alternate" hreflang="it" href="https://www.typed.online/contactus/bug?lang=it" />
+				<xhtml:link rel="alternate" hreflang="fr" href="https://www.typed.online/contactus/bug?lang=fr" />
+				<xhtml:link rel="alternate" hreflang="es" href="https://www.typed.online/contactus/bug?lang=es" />
+				<xhtml:link rel="alternate" hreflang="de" href="https://www.typed.online/contactus/bug?lang=de" />
+			<changefreq>monthly</changefreq>
+			<priority>0.2</priority>
+		</url>
+
+		<url>
+			<loc>https://www.typed.online/privacy</loc>
+			<changefreq>weekly</changefreq>
+			<priority>0.4</priority>
+		</url>
+
+		<url>
+			<loc>https://www.typed.online/terms</loc>
+			<changefreq>weekly</changefreq>
+			<priority>0.4</priority>
+		</url>
+
+	</urlset>

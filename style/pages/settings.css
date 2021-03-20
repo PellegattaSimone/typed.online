@@ -1,0 +1,27 @@
+form button:not([type=button]) {
+	margin-top: 5rem;
+}
+.default {
+	color: var(--gray2);
+}
+#file input {
+	position: relative;
+	left: 2vw;
+
+	background-color: transparent !important;
+
+	color: var(--black);
+	font-size: 2rem;
+
+	width: 30rem;
+
+	margin: 0 auto 1rem auto;
+	padding-top: 1rem;
+
+	border-style: none;
+}
+#file:focus {
+	background-color: transparent;
+
+	color: inherit;
+}

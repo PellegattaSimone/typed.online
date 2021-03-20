@@ -1,0 +1,51 @@
+#colors span {
+	display: inline-block;
+}
+#colors > span {
+	width: 40rem;
+	max-width: 90vw;
+}
+#colors span span {
+	overflow: hidden;
+
+	white-space: nowrap;
+
+	width: 8rem;
+	height: 8rem;
+
+	margin: 3rem;
+
+	border: .4rem solid var(--black);
+}
+#colors span label {
+	display: inline-block;
+
+	position: relative;
+	bottom: 6.5rem;
+
+	text-align: left;
+
+	font-size: 2.5rem;
+
+	width: 10rem;
+}
+#colors a {
+	display: block;
+
+	font-size: 2rem;
+
+	margin-bottom: 2rem;
+}
+.switch + button {
+	margin-top: 1.5rem;
+}
+input[type=color] {
+	position: relative;
+	top: -1.5rem;
+	left: -1.5rem;
+
+	width: 11rem;
+	height: 11rem;
+
+	margin: 0;
+}

@@ -1,0 +1,69 @@
+#link {
+	font-size: 2rem;
+
+	margin-right: 1rem;
+}
+#redirect {
+	text-align: center;
+	line-height: 5rem;
+
+	font-size: 2rem;
+
+	margin-top: 2rem;
+}
+#show {
+	position: absolute;
+	transform: translate(-4rem, 3.25rem);
+
+	width: 2.5rem;
+}
+input::-ms-reveal {
+	display: none;
+}
+.result {
+	color: var(--brown);
+	font-size: 2rem;
+	font-weight: bold;
+}
+div.result {
+	text-align: center;
+
+	margin-top: 1.5rem;
+}
+span.result {
+	position: absolute;
+
+	text-align: left;
+
+	width: 27vw;
+}
+.result i {
+	color: inherit;
+}
+.success {
+	color: var(--blue);
+}
+.common {
+	transform: translate(1.5rem, 3.5rem);
+}
+.label {
+	transform: translate(2rem, 1.2rem);
+}
+
+
+@media (max-aspect-ratio: 1/1) {
+	span.result {
+		left: 0;
+		right: 0;
+
+		text-align: center;
+
+		width: auto;
+	}
+	.common {
+		transform: translateY(7.5rem);
+	}
+	.label {
+		transform: translateY(4.5rem);
+	}
+}

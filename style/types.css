@@ -1,0 +1,87 @@
+#answers {
+	display: none;
+}
+#all {
+	text-align: center;
+
+	padding: 5rem 0;
+}
+#view {
+	display: flex;
+
+	flex-flow: row nowrap;
+	justify-content: space-evenly;
+
+	padding: 5rem 3rem 0;
+}
+#view button {
+	background-color: var(--gray2);
+
+	margin: 0 1rem;
+
+	border-radius: .5rem;
+}
+#view button:first-child {
+	background-color: var(--gray1);
+}
+.send {
+	overflow-y: hidden;
+
+	text-align: right;
+
+	max-height: 0;
+
+	margin: -3rem 0 -2rem;
+	padding-bottom: 2rem;
+
+	transition: max-height .5s ease-in;
+}
+textarea {
+	width: calc(100vw - 11rem);
+	max-width: none;
+	height: 20rem;
+	min-height: 10vh;
+	max-height: 20rem;
+	resize: vertical;
+
+	margin-bottom: 0;
+	padding: 1rem;
+}
+.reply {
+	left: 14vw;
+	padding-right: 6vw;
+}
+.reply * {
+	display: inline-block;
+}
+.reply span {
+	width: 18rem;
+
+	padding: 1rem 0;
+}
+.reply img {
+	vertical-align: top;
+
+	width: 2rem;
+
+	padding: 0 1rem;
+}
+.hidden {
+	cursor: not-allowed;
+
+	color: var(--gray1);
+
+	filter: blur(.1rem);
+}
+.hidden img {
+	filter: invert(30%);
+}
+section > .result {
+	padding-bottom: 2rem;
+	margin: 2rem 3rem;
+
+	border-bottom: .1rem solid var(--gray1);
+}
+article .result {
+	margin: 1rem 0 3rem;
+}

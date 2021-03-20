@@ -1,0 +1,163 @@
+footer {
+	position: absolute;
+	bottom: 0;
+
+	background-color: var(--brown);
+
+	width: 100%;
+	height: 12rem;
+	min-height: 10vh;
+
+	border-top: .3rem solid var(--black);
+}
+#license {
+	z-index: 1;
+
+	position: fixed;
+	right: 1rem;
+	bottom: 0rem;
+}
+#license img {
+	width: 5rem;
+}
+#lang {
+	z-index: 1;
+
+	position: absolute;
+	top: 0;
+	left: 4rem;
+	bottom: 0;
+	margin: auto;
+
+	height: 4.3rem;
+}
+#lang img {
+	cursor: none;
+
+	width: 6rem;
+
+	border: .2rem solid var(--black);
+}
+#lang ul {
+	overflow: hidden;
+	list-style-type: none;
+
+	position: absolute;
+	bottom: 4.3rem;
+
+	height: 0;
+
+	margin: 0;
+	padding: 0;
+
+	transition: height .5s;
+}
+#lang li {
+	text-align: center;
+	line-height: 2.3rem;
+	background-color: var(--blue);
+
+	font-size: 1.5rem;
+	font-weight: normal;
+
+	width: 6rem;
+	height: 2.3rem;
+
+	border-style: solid;
+	border-width: .2rem .2rem 0;
+}
+#lang li:hover {
+	background-color: var(--green);
+}
+#foot {
+	display: flex;
+	
+	flex-flow: row nowrap;
+	justify-content: space-evenly;
+
+	position: absolute;
+	top: 0;
+	left: 14.4rem;
+	right: 0;
+	bottom: 0;
+
+	border-left: .3rem solid var(--black);
+}
+#foot * {
+	z-index: 1;
+}
+#foot div {
+	display: inline-block;
+
+	flex-shrink: 0;
+
+	width: 8rem;
+	height: 0;
+}
+#foot button {
+	background-color: var(--blue);
+
+	color: var(--black);
+	font-size: 1.8rem;
+
+	width: 28rem;
+	max-width: 36%;
+	height: 4rem;
+
+	margin-top: 2rem;
+
+	border: .2rem solid var(--black);
+	border-radius: 0;
+}
+#foot span {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 2.2rem;
+
+	text-align: center;
+
+	font-size: 1.5rem;
+}
+#foot button:hover {
+	background-color: var(--green);
+}
+#privacy, #terms {
+	position: absolute;
+	bottom: .5rem;
+
+	font-size: 1.2rem;
+}
+#privacy {
+	left: 2rem;
+}
+#terms {
+	right: 8rem;
+}
+
+@media (max-aspect-ratio: 1/2) {
+	#lang {
+		top: -6.7rem !important;
+	}
+}
+@media (max-aspect-ratio: 2/3) {
+	footer {
+		min-height: 15vh;
+	}
+	#lang {
+		top: -3rem;
+		left: 0;
+		right: 0;
+
+		text-align: center;
+	}
+	#lang ul {
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	#foot {
+		left: 0;
+
+		border-style: none;
+	}
+}

@@ -1,0 +1,201 @@
+header {
+	display: flex;
+	z-index: 2;/*#file in settings*/
+
+	flex-flow: row nowrap;
+	align-items: center;
+
+	position: fixed;
+	left: 0;
+	right: 0;
+
+	background-color: var(--brown);
+
+	height: 9rem;
+
+	border-bottom: .3rem solid var(--black);
+}
+#search {
+	display: inline-block;
+
+	position: relative;
+
+	text-align: left;
+
+	width: 35.5rem;
+	max-width: 95vw;
+	height: 4.5rem;
+
+	margin: 0;
+	padding: 0;
+}
+#search input, .go, .go img, #drag img {
+	position: absolute;
+	top: 0;
+	margin: auto;
+}
+#search button[type=submit] {
+	display: none;
+}
+#search input {
+	z-index: 1;
+
+	right: 0;
+
+	max-width: 72vw;
+
+	border-color: var(--black);
+}
+#search .go, #drag {
+	border-color: var(--black);
+}
+.go, #drag {
+	width: 4.5rem;
+
+	margin-top: 0 !important;
+	margin-left: 2rem;
+
+	border-radius: 1rem;
+}
+.go img, #drag img {
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	width: 2.5rem;
+}
+#drag {
+	position: relative;
+	right: 28.75rem;
+}
+#theme {
+	z-index: 2;
+
+	position: absolute;
+	top: 2.25rem;
+	right: 21rem;
+
+	margin: 0;
+	padding: 0;
+}
+#theme div {
+	overflow: hidden;
+
+	height: 0;
+
+	transition: height .5s;
+}
+#theme span, #theme button {
+	text-align: center;
+}
+#theme span {
+	display: inline-block;
+	cursor: none;
+
+	line-height: 4.1rem;
+	background-color: var(--blue);
+
+	font-size: 2rem;
+
+	width: 8.6rem;
+	height: 4.1rem;
+
+	border: .2rem solid var(--black);
+	border-top-left-radius: 2rem;
+	border-top-right-radius: 2rem;
+}
+#theme button {
+	display: block;
+	line-height: 2.3rem;
+
+	font-size: 1.5rem;
+
+	width: 9rem;
+	height: 2.5rem;
+
+	margin: 0;
+
+	border-color: var(--black);
+	border-width: 0 .2rem .2rem;
+	border-radius: 0;
+}
+#theme button:hover {
+	background-color: var(--green);
+}
+#light {
+	background-color: #48F;
+}
+#dark {
+	background-color: #238;
+}
+#personalize {
+	background-color: #F33;
+}
+#maxi {
+	width: 18rem;
+	height: 6rem;
+}
+#mini {
+	display: none;
+
+	width: 6rem;
+}
+#back {
+	color: var(--black);
+	font-size: 2rem;
+
+	width: 9rem;
+
+	margin-left: 2rem;
+
+	border-color: var(--black);
+}
+#progress {
+	position: absolute;
+	top: 8.75rem;
+
+	background-color: var(--black);
+
+	width: 0;
+	height: .5rem;
+}
+#space {
+	height: 9rem;
+}
+.typed {
+	position: absolute;
+	top: 1rem;
+	right: 1.5rem;
+}
+
+@media (max-aspect-ratio: 3/8), (min-aspect-ratio: 1/1) and (max-aspect-ratio: 6/5) {
+	#drag {
+		position: absolute;
+		right: 20rem;
+	}
+	#maxi {
+		visibility: hidden !important;
+	}
+	#mini {
+		display: inline-block;
+	}
+	#theme {
+		right: 9rem;
+	}
+}
+@media (max-aspect-ratio: 1/2)
+{
+	#back {
+		display: none;
+	}
+}
+@media(max-aspect-ratio: 1/1) {
+	#space {
+		margin-bottom: 9rem;
+	}
+}
+@media (max-aspect-ratio: 1/1), (pointer: coarse), (hover: none) {
+	#drag, #progress {
+		display: none;
+	}
+}

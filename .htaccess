@@ -1,0 +1,127 @@
+php_flag output_buffering on
+php_flag session.auto_start on
+php_flag magic_quotes 1
+php_flag magic_quotes_gpc 1
+
+php_value session.gc_maxlifetime 600
+php_value session.cookie_lifetime 600
+php_value date.timezone Europe/Rome
+php_value variables_order EGPCS
+php_value include_path "/home/vol13_4/epizy.com/epiz_25381446/htdocs:/opt/lampp/htdocs/PHP/typed"
+#php_value upload_max_filesize 2G
+#php_value post_max_size 2G
+
+
+#temp - production
+
+php_flag display_errors off
+php_flag display_startup_errors off
+php_flag html_errors off
+
+php_flag log_errors off
+php_value error_reporting -1
+php_value error_prepend_string " "
+php_value error_append_string " "
+
+SetEnv KEY $3m@G_$'Tf@rC3ll3P
+SetEnv SALT z.80387z/x812
+SetEnv SOFT 218x\z78308.z
+
+
+## Turn on rewrite engine
+
+RewriteEngine on
+
+
+## Force WWW
+
+RewriteCond %{REMOTE_ADDR} !^192\.168\.[0-255]\.[0-9]$
+RewriteCond %{HTTP_HOST} !^localhost(:\d+)?$
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule .* https://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L] #ext
+
+## Force HTTPS
+
+RewriteCond %{REMOTE_ADDR} !^192\.168\.[0-255]\.[0-9]$
+RewriteCond %{HTTP_HOST} !^localhost(:\d+)?$
+RewriteCond %{HTTPS} !on
+RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L] #ext
+
+
+## Remove i=n
+
+RewriteCond %{QUERY_STRING} ^(.*)&?i=[^&]+&?(.*)$ [NC]
+RewriteRule ^/?(.*)$ /$1?%1%2 [R=301,L]
+
+
+## User redirect
+
+RewriteCond %{REQUEST_FILENAME} -d [OR]
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule .* - [S=2]
+
+RewriteRule ^([^/]+)/(profile)([^/]?)$ ./$2?name=$1 [QSA,L] #int
+
+RewriteRule ^([^/]+)$ ./user/?name=$1 [QSA,L] #int
+
+SetEnvIfNoCase Host "localhost" BASE=/PHP/typed
+SetEnvIfNoCase Remote_Addr "192\.168\.[0-255]\.[0-9]" BASE=/PHP/typed
+
+RewriteCond %{THE_REQUEST} ^GET\ .*/profile/?.*name=([^\s&]+)? [NC]
+RewriteRule ^.*$ %{ENV:BASE}/%1/profile? [R=301,L] #ext
+
+RewriteCond %{THE_REQUEST} ^GET\ .*/?.*name=([^\s&]+)? [NC]
+RewriteRule ^.*$ %{ENV:BASE}/%1? [R=301,L] #ext
+
+
+## Forbidden files
+
+RewriteRule ^((?!robots).)*\.(txt|sql)$ %{ENV:BASE}/?error=403 [R=301,L] #ext
+
+
+## Instagram Redirect + Token
+
+RewriteCond %{REQUEST_FILENAME} -d [OR]
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule .* - [S=5]
+
+RewriteRule ^(signup/password)/([a-z0-9]+)$ ./$1?token=$2 [QSA,L] #int
+
+RewriteRule ^(profile/settings/)([a-z0-9]+)$ ./$1email.php?token=$2 [QSD,L] #int
+
+RewriteRule ^signup/([a-z0-9]{16})$ ./signup?point=$1 [QSD,L] #int
+
+RewriteRule ^instagram/(login|signup)$ ./$1?instagram [QSA,L] #int
+
+RewriteRule ^(instagram/deletions)/([a-z0-9]{8})$ ./$1?code=$2 [QSD,L] #int
+
+
+## Remove trailing slash
+
+DirectorySlash Off
+
+RewriteCond %{REQUEST_URI} /+[^\.]+$
+RewriteRule ^(.+[^/])$ $1/index.php [L] #int
+
+RewriteCond %{QUERY_STRING} !^name [NC]
+RewriteRule ^(.*)/$ %{ENV:BASE}/$1 [R=301,L] #ext
+
+
+## Remove multiple slashes
+
+RewriteCond %{THE_REQUEST} ^.*\ (.*)/{2,}([^\ ]*)
+RewriteRule ^ %1/%2 [R=302,L]
+
+
+## Error Pages
+
+ErrorDocument 400 https://www.typed.online?error=400
+ErrorDocument 401 https://www.typed.online?error=401
+ErrorDocument 403 https://www.typed.online?error=403
+ErrorDocument 404 https://www.typed.online?error=404
+ErrorDocument 409 https://www.typed.online?error=409
+ErrorDocument 500 https://www.typed.online?error=500
+ErrorDocument 501 https://www.typed.online?error=501
+ErrorDocument 502 https://www.typed.online?error=502
+ErrorDocument 503 https://www.typed.online?error=503
+ErrorDocument 504 https://www.typed.online?error=504

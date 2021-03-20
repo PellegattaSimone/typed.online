@@ -1,0 +1,22 @@
+li[onclick] {
+	text-decoration: underline;
+}
+p input {
+	font-family: inconsolata, monospace;
+}
+#share input {
+	width: 37ch;
+	max-width: calc(100vw - 5rem);
+}
+#bio button {
+	max-width: 36vw;
+
+	margin: 0 1rem;
+}
+#bio div {
+	overflow-y: hidden;
+
+	white-space: pre;
+
+	transition: height .8s;
+}
